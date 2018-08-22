@@ -8,7 +8,7 @@ class Song < ActiveRecord::Base
 
   def drake_made_this
     # when this method is called it should assign the song's artist to Drake
-    binding.pry
+    #binding.pry
 
     artist_Drake = Artist.find_by(name: "Drake") || Artist.create(name: "Drake")
 
