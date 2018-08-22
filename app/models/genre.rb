@@ -13,8 +13,8 @@ class Genre < ActiveRecord::Base
   end
 
   def all_artist_names
-    binding.pry
+    #binding.pry
     # return an array of strings containing every musician's name
-    self.artists.name
+  self.artists.collect {|artist| artist.name}
   end
 end
